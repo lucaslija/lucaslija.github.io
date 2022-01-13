@@ -181,7 +181,7 @@ nav li a {
     font-size: 10rem;
 }
 
-#info {
+.info {
     grid-area: i;
     background-color: #ffffff;
     color: #3C3C3C;
@@ -192,45 +192,38 @@ nav li a {
     gap: 25px;
 }
 
-#info h2 {
+.info h2 {
     font-family: 'Josefin Sans', sans-serif;
     color: #c32e2e;
     font-size: 4rem;
 }
 
-#info p {
+.info p {
     font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
     font-size: 1.5rem;
 }
 
-#info a {
+.info a {
     font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
     font-style: italic;
 }
 
-#info #footnote {
-    margin-top: auto;
-    font-style: italic;
-    font-size: 1rem;
-}
-
-#info .star {
+.info .star {
     font-size: 1.75rem;
 }
 
-#info ul {
+#about p {
+    font-size: 1rem;
+}
+
+#about ul {
     padding-left: 2rem;
 }
 
-#info li {
+#about li {
     list-style: circle;
-    font-size: 1rem;
     line-height: 2rem;
-}
-
-#footnote em {
-    font-family: inherit;
-    text-decoration: underline;
+    font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
 }
 
 footer {
