@@ -28,3 +28,9 @@ ul {
 * {
     font-family: Roboto, sans-serif;
 }
+
+/* BODY */
+
+body {
+    background-image: url("images/test_palette.png");
+}
