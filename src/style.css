@@ -1,0 +1,32 @@
+/**
+BOILERPLATE & RESETS
+**/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+/* FONT STUFF */
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+/* BODY */
