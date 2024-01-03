@@ -117,6 +117,9 @@ nav li {
     background-color: #ffffff;
     color: #949494;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 #info h2 {
@@ -125,8 +128,22 @@ nav li {
     font-size: 3rem;
 }
 
-#info > * {
-    padding-top: 25px;
+#info p {
+    font-size: 1.25rem;
+}
+
+#info #footnote {
+    margin-top: auto;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+#info .star {
+    font-size: 1.75rem;
+}
+
+#footnote em {
+    text-decoration: underline;
 }
 
 footer {
