@@ -55,12 +55,12 @@ body {
 
 header {
     grid-area: h;
-    background-color: rgb(1, 185, 185);
+    background-color: #018989;
     padding-left: 25px;
 }
 
 header h1 {
-    color: rgb(243, 218, 76);
+    color: #f3da4c;
     font-size: 5rem;
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
@@ -81,7 +81,7 @@ header h2 {
 nav {
     grid-area: n;
     background-color: rgb(243, 218, 76);
-    color: rgb(242, 146, 146);
+    color: #E73636;
     font-style: italic;
     text-align: right;
     padding: 25px;
@@ -92,12 +92,13 @@ nav {
 
 nav h1 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 5rem;
-    height: 20%;
+    font-size: 3rem;
+    font-weight: bolder;
+    height: 10%;
 }
 
 nav ul {
-    height: 80%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -106,20 +107,19 @@ nav ul {
 
 nav li {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 3rem;
-    font-weight: bolder;
+    font-size: 5rem;
 }
 
 #info {
     grid-area: i;
-    background-color: white;
-    color: darkgray;
+    background-color: #ffffff;
+    color: #949494;
     padding: 25px;
 }
 
 #info h2 {
     font-family: 'Josefin Sans', sans-serif;
-    color: rgb(242, 146, 146);
+    color: #E73636;
     font-size: 3rem;
 }
 
@@ -129,7 +129,8 @@ nav li {
 
 footer {
     grid-area: f;
-    background-color: rgb(1, 185, 185);
+    background-color: #01b9b9;
+    color: #3C3C3C;
     display: flex;
     align-items: end;
     justify-content: end;
