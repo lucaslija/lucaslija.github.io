@@ -59,23 +59,25 @@ header {
     padding-left: 25px;
 }
 
+header > * {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 header h1 {
     color: #f3da4c;
     font-size: 5rem;
-    font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding-top: 25px;
 }
 
 header h2 {
     font-size: 2rem;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 #smiley {
     font-size: 2rem;
     margin-top: 20px;
-    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 20px;
 }
 
 nav {
