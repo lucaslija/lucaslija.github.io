@@ -30,3 +30,12 @@ ul {
 }
 
 /* BODY */
+
+body {
+    background-color: rgb(1, 185, 185);
+    color: white;
+}
+
+h1 {
+    color: rgb(243, 218, 76);
+}
