@@ -45,11 +45,12 @@ body {
     height: 100vh;
     display: grid;
     grid-template-areas: 
-        "h h n"
-        "i i n"
-        "i i f";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+        "h h h n"
+        "i i i n"
+        "i i i n"
+        "i i i f";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 25px;
 }
 
@@ -84,7 +85,6 @@ header h2 {
 #smiley {
     font-size: 2rem;
     margin-top: 20px;
-    margin-bottom: 20px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -94,10 +94,11 @@ header h2 {
 
 #header__art {
     grid-area: art;
+    height: min-content;
 }
 
 #owl-logo {
-    max-height: 40vh;
+    height: clamp(10vh, 25vh, 40vh);
     object-fit: cover;
 }
 
