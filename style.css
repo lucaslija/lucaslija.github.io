@@ -60,6 +60,7 @@ header {
     display: grid;
     grid-template-areas: 
         "txt art";
+        justify-content: space-between;
 }
 
 header > * {
@@ -96,7 +97,7 @@ header h2 {
 }
 
 #owl-logo {
-    height: 100%;
+    max-height: 40vh;
     object-fit: cover;
 }
 
