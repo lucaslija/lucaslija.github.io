@@ -57,6 +57,9 @@ header {
     grid-area: h;
     background-color: #018989;
     padding-left: 25px;
+    display: grid;
+    grid-template-areas: 
+        "txt art";
 }
 
 header > * {
@@ -67,17 +70,34 @@ header h1 {
     color: #f3da4c;
     font-size: 5rem;
     margin: 0;
-    padding-top: 25px;
+    font-family: 'Oswald';
+    font-weight: bold;
 }
 
 header h2 {
     font-size: 2rem;
+    font-style: italic;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #smiley {
     font-size: 2rem;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#header__text {
+    grid-area: txt;
+}
+
+#header__art {
+    grid-area: art;
+}
+
+#owl-logo {
+    height: 100%;
+    object-fit: cover;
 }
 
 nav {
@@ -140,6 +160,10 @@ nav li {
 
 #info .star {
     font-size: 1.75rem;
+}
+
+#smilette {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #footnote em {
