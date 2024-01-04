@@ -45,10 +45,10 @@ body {
     height: 100vh;
     display: grid;
     grid-template-areas: 
-        "h h n"
-        "i i n"
-        "i i f";
-    grid-template-columns: repeat(3, 1fr);
+        "h h h h h n n"
+        "c i i i i n n"
+        "c i i i i f f";
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 25px;
 }
@@ -63,17 +63,21 @@ header {
         justify-content: space-between;
 }
 
-header > * {
+#header__text {
     font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-header .name-text {
+header a.name-text {
     color: #f3da4c;
     font-size: 5rem;
-    margin: 0;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-decoration: none;
+    letter-spacing: .75rem;
+    line-height: 5rem;
 }
 
 header h2 {
@@ -84,7 +88,6 @@ header h2 {
 
 #smiley {
     font-size: 2rem;
-    margin-top: 20px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -98,13 +101,13 @@ header h2 {
 }
 
 #owl-logo {
-    height: clamp(10vh, 31vh, 40vh);
+    height: clamp(10vh, 35vh, 40vh);
     object-fit: cover;
 }
 
 nav {
     grid-area: n;
-    background-color: rgb(243, 218, 76);
+    background-color: #f3da4c;
     color: #E73636;
     font-style: italic;
     text-align: right;
@@ -141,6 +144,11 @@ nav li a {
     color: #E73636;
 }
 
+#container {
+    grid-area: c;
+    background-color:#c7b23e;
+}
+
 #info {
     grid-area: i;
     background-color: #ffffff;
@@ -158,8 +166,13 @@ nav li a {
     font-size: 3rem;
 }
 
+.spaced-letters {
+    font-family: inherit;
+    letter-spacing: .5rem;
+}
+
 #info p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 #info #footnote {
@@ -176,7 +189,7 @@ nav li a {
 }
 #info li {
     list-style: circle;
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 2rem;
 }
 
