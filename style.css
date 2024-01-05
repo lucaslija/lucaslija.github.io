@@ -103,12 +103,13 @@ header h2 {
 #owl-logo {
     height: clamp(10vh, 35vh, 40vh);
     object-fit: cover;
+    padding-right: 3vw;
 }
 
 nav {
     grid-area: n;
     background-color: #f3da4c;
-    color: #E73636;
+    color: #c32e2e;
     font-style: italic;
     text-align: right;
     padding: 25px;
@@ -140,18 +141,51 @@ nav li a {
     text-decoration: none;
     font-size: inherit;
     font-family: inherit;
-    color: #E73636;
+    color: #c32e2e;
 }
 
 #container {
+    background-color: #3C3C3C;
     grid-area: c;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#box-container-left {
+    height: calc((1 / 3) * 100%);
+    display: flex;
+    gap: 25px;
+}
+
+#whitebox-left {
+    background-color: #ffffff;
+    width: 50%;
+}
+
+#redbox-left {
+    background-color: #c32e2e;
+    width: 50%;
+}
+
+#yellowbox {
     background-color:#c7b23e;
+    color:#3C3C3C;
+    height: calc((2 / 3) * 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#yellowbox h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10rem;
 }
 
 #info {
     grid-area: i;
     background-color: #ffffff;
-    color: #949494;
+    color: #3C3C3C;
     padding: 25px;
     padding-left: 50px;
     display: flex;
@@ -161,17 +195,18 @@ nav li a {
 
 #info h2 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #E73636;
-    font-size: 3rem;
-}
-
-.spaced-letters {
-    font-family: inherit;
-    letter-spacing: .5rem;
+    color: #c32e2e;
+    font-size: 4rem;
 }
 
 #info p {
-    font-size: 1.1rem;
+    font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
+#info a {
+    font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
+    font-style: italic;
 }
 
 #info #footnote {
@@ -183,30 +218,64 @@ nav li a {
 #info .star {
     font-size: 1.75rem;
 }
+
 #info ul {
     padding-left: 2rem;
 }
+
 #info li {
     list-style: circle;
     font-size: 1rem;
     line-height: 2rem;
 }
 
-#smilette {
-    font-family: 'Josefin Sans', sans-serif;
-}
-
 #footnote em {
+    font-family: inherit;
     text-decoration: underline;
 }
 
 footer {
     grid-area: f;
-    background-color: #01b9b9;
-    color: #3C3C3C;
+    background-color: #3C3C3C;
     display: flex;
-    align-items: end;
+    gap: 25px;
+}
+
+#bluebox {
+    width: calc((5 / 7) * 100%);
+    background-color: #01b9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bluebox p {
+    color:#f3da4c;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10rem;
+}
+
+#box-container-right {
+    width: calc((2 / 7) * 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#whitebox-right {
+    height: 50%;
+    background-color: #ffffff;
+}
+
+#redbox-right {
+    height: 50%;
+    background-color: #c32e2e;
+    display: flex;
     justify-content: end;
+}
+
+#redbox-right p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
     font-size: 1rem;
-    padding: 15px;
 }
