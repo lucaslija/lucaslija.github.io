@@ -3,318 +3,316 @@ BOILERPLATE & RESETS
 **/
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 menu:not(article menu),
 ol:not(article ol),
 ul:not(article ul) {
-    list-style: none;
+  list-style: none;
 }
 
 menu,
 ol,
 ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 h1,
 h2,
 h3 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* FONT STUFF */
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* BODY */
 
 body {
-    background-color: rgb(76, 77, 77);
-    color: white;
-    height: 100vh;
-    display: grid;
-    grid-template-areas: 
-        "h h h h h n n"
-        "c i i i i n n"
-        "c i i i i f f";
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 25px;
+  background-color: rgb(76, 77, 77);
+  color: white;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "h h h h h n n"
+    "c i i i i n n"
+    "c i i i i f f";
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 25px;
 }
 
 header {
-    grid-area: h;
-    background-color: #018989;
-    padding-left: 4vw;
-    display: grid;
-    grid-template-areas: 
-        "txt art";
-        justify-content: space-between;
+  grid-area: h;
+  background-color: #018989;
+  padding-left: 4vw;
+  display: grid;
+  grid-template-areas: "txt art";
+  justify-content: space-between;
 }
 
 #header__text {
-    font-family: 'Josefin Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 header a.name-text {
-    color: #f3da4c;
-    font-size: 5rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    letter-spacing: .75rem;
-    line-height: 5.5rem;
+  color: #f3da4c;
+  font-size: 5rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.75rem;
+  line-height: 5.5rem;
 }
 
 header h2 {
-    font-size: 2rem;
-    font-style: italic;
-    font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #smiley {
-    font-size: 2rem;
-    font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #header__text {
-    grid-area: txt;
+  grid-area: txt;
 }
 
 #header__art {
-    grid-area: art;
-    height: min-content;
+  grid-area: art;
+  height: min-content;
 }
 
 #owl-logo {
-    height: clamp(10vh, 35vh, 40vh);
-    object-fit: cover;
-    padding-right: 3vw;
+  height: clamp(10vh, 35vh, 40vh);
+  object-fit: cover;
+  padding-right: 3vw;
 }
 
 nav {
-    grid-area: n;
-    background-color: #f3da4c;
-    color: #c32e2e;
-    font-style: italic;
-    text-align: right;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
+  grid-area: n;
+  background-color: #f3da4c;
+  color: #c32e2e;
+  font-style: italic;
+  text-align: right;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 nav h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 3rem;
-    font-weight: bolder;
-    height: 10%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  height: 10%;
 }
 
 nav ul {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 25px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 25px;
 }
 
 nav li {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
 }
 
 nav li a {
-    text-decoration: none;
-    font-size: inherit;
-    font-family: inherit;
-    color: #c32e2e;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: #c32e2e;
 }
 
 #container {
-    grid-area: c;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 #box-container-left {
-    height: calc((1 / 5) * 100%);
-    display: flex;
-    gap: 25px;
+  height: calc((1 / 5) * 100%);
+  display: flex;
+  gap: 25px;
 }
 
 #whitebox-left {
-    background-color: #ffffff;
-    width: 50%;
+  background-color: #ffffff;
+  width: 50%;
 }
 
 #redbox-left {
-    background-color: #c32e2e;
-    width: 50%;
+  background-color: #c32e2e;
+  width: 50%;
 }
 
 #yellowbox {
-    background-color:#f3da4c;
-    color:#3C3C3C;
-    height: calc((4 / 5) * 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #f3da4c;
+  color: #3c3c3c;
+  height: calc((4 / 5) * 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #yellowbox h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 10rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10rem;
 }
 
 .info {
-    grid-area: i;
-    background-color: #ffffff;
-    color: #3C3C3C;
-    padding: 25px;
-    padding-left: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  grid-area: i;
+  background-color: #ffffff;
+  color: #3c3c3c;
+  padding: 25px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 #contact {
-    padding-right: 50px;
+  padding-right: 50px;
 }
 
 .info h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #c32e2e;
-    font-size: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #c32e2e;
+  font-size: 4rem;
 }
 
 .info p {
-    font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 1.5rem;
 }
 
 .info a {
-    font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
-    font-style: italic;
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-style: italic;
 }
 
 .info .star {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 #about p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 #about ul {
-    padding-left: 2rem;
+  padding-left: 2rem;
 }
 
 #about li {
-    list-style: circle;
-    line-height: 2rem;
-    font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
+  list-style: circle;
+  line-height: 2rem;
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    font-style: italic;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-style: italic;
 }
 
 input {
-    border-radius: 15px;
-    border: 1px solid rgb(76, 77, 77);
-    padding: 15px;
-    font-style: italic;
+  border-radius: 15px;
+  border: 1px solid rgb(76, 77, 77);
+  padding: 15px;
+  font-style: italic;
 }
 
 .name-and-email {
-    display: grid;
-    grid-template-areas: 
-        "name email";
-    gap: 25px;
+  display: grid;
+  grid-template-areas: "name email";
+  gap: 25px;
 }
 
 .field-box {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 #message {
-    height: 250px;
-    border-radius: 15px;
-    border: 1px solid rgb(76, 77, 77);
-    padding: 15px;
-    font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
+  height: 250px;
+  border-radius: 15px;
+  border: 1px solid rgb(76, 77, 77);
+  padding: 15px;
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
 }
 
 #send {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #ffffff;
-    background-color: #c32e2e;
-    font-size: 1.5rem;
-    font-style: normal;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
+  background-color: #c32e2e;
+  font-size: 1.5rem;
+  font-style: normal;
 }
 
 footer {
-    grid-area: f;
-    background-color: #3C3C3C;
-    display: flex;
-    gap: 25px;
+  grid-area: f;
+  background-color: #3c3c3c;
+  display: flex;
+  gap: 25px;
 }
 
 #bluebox {
-    width: calc((5 / 7) * 100%);
-    background-color:#018989;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: calc((5 / 7) * 100%);
+  background-color: #018989;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #bluebox p {
-    color:#f3da4c;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 10rem;
+  color: #f3da4c;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10rem;
 }
 
 #box-container-right {
-    width: calc((2 / 7) * 100%);
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  width: calc((2 / 7) * 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 #whitebox-right {
-    height: 50%;
-    background-color: #ffffff;
+  height: 50%;
+  background-color: #ffffff;
 }
 
 #redbox-right {
-    height: 50%;
-    background-color: #c32e2e;
-    display: flex;
-    justify-content: end;
+  height: 50%;
+  background-color: #c32e2e;
+  display: flex;
+  justify-content: end;
 }
 
 #redbox-right p {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-size: 1rem;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 1rem;
 }
