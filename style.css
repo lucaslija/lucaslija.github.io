@@ -215,7 +215,7 @@ nav li a {
   font-size: 1.75rem;
 }
 
-#about p {
+#about p, #design p {
   font-size: 1rem;
 }
 
@@ -227,6 +227,20 @@ nav li a {
   list-style: circle;
   line-height: 2rem;
   font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+}
+
+#examples {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.example-box {
+  font-weight: bold;
+  width: 15vw;
+  border: 1px solid rgb(76, 77, 77);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
 }
 
 form {
