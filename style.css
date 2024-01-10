@@ -247,6 +247,7 @@ input {
   display: grid;
   grid-template-areas: "name email";
   gap: 25px;
+  width: min-content;
 }
 
 .field-box {
@@ -256,7 +257,8 @@ input {
 }
 
 #message {
-  height: 250px;
+  height: min-content;
+  overflow: scroll;
   border-radius: 15px;
   border: 1px solid rgb(76, 77, 77);
   padding: 15px;
