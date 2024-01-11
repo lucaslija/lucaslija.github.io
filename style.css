@@ -56,10 +56,11 @@ body {
 header {
   grid-area: h;
   background-color: #018989;
-  padding-left: 4vw;
+  padding-left: 6vw;
   display: grid;
   grid-template-areas: "txt art";
   justify-content: space-between;
+  align-items: center;
 }
 
 #header__text {
@@ -75,7 +76,7 @@ header a.name-text {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   text-decoration: none;
-  letter-spacing: 0.75rem;
+  letter-spacing: 1rem;
   line-height: 5.5rem;
 }
 
@@ -100,7 +101,7 @@ header h2 {
 }
 
 #owl-logo {
-  height: clamp(10vh, 35vh, 40vh);
+  height: clamp(10vh, 25vh, 40vh);
   object-fit: cover;
   padding-right: 3vw;
 }
