@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Following Eyes with Angle and Translation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #eyes-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+        }
+
+        .eye {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            border: 3px solid black;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .pupil {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="eyes-container">
+        <div class="eye">
+            <div class="pupil" id="leftPupil"></div>
+        </div>
+        <div class="eye">
+            <div class="pupil" id="rightPupil"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('mousemove', (event) => {
+            const eyesContainer = document.getElementById('eyes-container');
+            const leftPupil = document.getElementById('leftPupil');
+            const rightPupil = document.getElementById('rightPupil');
+
+            // Get the position of the eyes container
+            const { left, top, width, height } = eyesContainer.getBoundingClientRect();
+
+            // Calculate the angle between the center of the eyes and the mouse cursor
+            const deltaX = event.clientX - (left + width / 2);
+            const deltaY = event.clientY - (top + height / 2);
+            const angle = Math.atan2(deltaY, deltaX);
+
+            // Calculate the distance from the center
+            const distance = Math.min(Math.sqrt(deltaX * deltaX + deltaY * deltaY), 10);
+
+            // Move the pupils based on the calculated angle and distance
+            leftPupil.style.transform = `translate(-50%, -50%) translate(${distance * Math.cos(angle)}px, ${distance * Math.sin(angle)}px)`;
+            rightPupil.style.transform = `translate(-50%, -50%) translate(${distance * Math.cos(angle)}px, ${distance * Math.sin(angle)}px)`;
+        });
+    </script>
+</body>
+</html>
